@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <link
+         rel="stylesheet"
+         href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+         integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+         crossorigin="anonymous"
+         />
+      <link rel="stylesheet" type="text/css" href="style.css" />
+      <title>Obrazac</title>
+   </head>
+   <body>
+      <div class="header">
+         <div class="avatari-title">
+            <h1>DOBRODOSLI!</h1>
+            <div class="avatari">
+               <button id="myButtons" class="buttons" >
+                  <img src="photos/dollar.png"> 
+                  <p> Basic 5 KM</p>
+               </button>
+            </div>
+            <div class="avatari">
+               <button id="myButtons1" class="buttons" >
+                  <img src="photos/dollar.png"> 
+                  <p>Premium 10 KM</p>
+               </button>
+            </div>
+            <div class="avatari">
+               <button id="myButtons2" class="buttons" >
+                  <img src="photos/dollar.png"> 
+                  <p>Supreme 15 KM</p>
+               </button>
+            </div>
+         </div>
+      </div>
+      </div>
+      <div class="container form-container">
+      <form class="form toggleForm">
+         <h1>Molimo unesite vase podatke!</h1>
+         <h2 id="subtitle"></h2>
+         <div class="name_lastname">
+            <h3>Ime i prezime:</h3>
+         </div>
+         <div class="name_lastname">
+            <input
+               id="commentUser"
+               type="text"
+               name="name"
+               />
+         </div>
+         <div class="number">
+            <h3>Broj telefona:</h3>
+         </div>
+         <div class="number">
+            <input
+               id="numberUser"
+               type="text"
+               name="name"
+               pattern="[0-9]*" maxlength="10" size="10" class="number" 
+               />
+         </div>
+         <div class="date">
+            <h3>Datum rodjenja: </h3>
+            <label for="date"></label> <br>
+            <input       
+               type="date" 
+               id="dateUser"
+               name="name"       
+               value="2003-01-01"       
+               min="1945-01-01" max="2003-01-01">
+         </div>
+         <div class="gradovi">
+            <h3>
+               <label for="gradovi" >Mjesto stanovanja:</label> </br>
+               <select id="gradovi" name="gradovi"
+                  type="label"
+                  name="name"
+                  >
+                  <option value="Mjesto stanovanja">Mjesto stanovanja:</option>
+                  <option value="Sarajevo">Sarajevo</option>
+                  <option value="Zenica">Zenica</option>
+                  <option value="BanjaLuka">Banja Luka</option>
+                  <option value="Mostar">Mostar</option>
+               </select>
+            </h3>
+         </div>
+         <div class="gender">
+            <h3>
+               <label for="gender" >Spol:</label> </br>
+               <select id="gender" name="gender"
+                  type="label"
+                  name="name"
+                  >
+                  <option value="Izaberite spol">Izaberite spol:</option>
+                  <option value="Musko">Musko</option>
+                  <option value="Zensko">Zensko</option>
+               </select>
+            </h3>
+            <div class="maticni-broj">
+               <h3>Maticni broj</h3>
+            </div>
+            <div class="comment">
+               <input
+                  id="commentInput"
+                  type="text"
+                  name="name"
+                  pattern="[0-9]*" maxlength="13" size="13" class="maticni-broj" 
+                  />
+            </div>
+            <br />
+            <div class="comment">
+               <button type="button" class="btn btn-primary" id="btn">
+               Dalje
+               </button>
+            </div>
+            <div class="back">
+               <button id="go-back" class="btn btn-back">
+               Nazad
+               </button>
+            </div>
+      </form>
+      </div>
+      <div class="container">
+         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 podaci">
+            <h2>Vasi podaci:</h2>
+         </div>
+         <div>
+            <ul id="commentList"></ul>
+         </div>
+      </div>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+      <script type="text/javascript" src="script.js"></script>
+   </body>
+</html>
